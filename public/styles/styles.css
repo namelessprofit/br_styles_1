@@ -1,0 +1,51 @@
+body {
+  background-color: white;
+}
+
+.jumbotron {
+  background-image: url(/images/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  height: 30vw;
+  width: 100%;
+  margin-top: 1.5vw;
+}
+
+#jumbotron-message h1 {
+  font-size: 4.5vw;
+  margin-top: 4.0vw;
+
+}
+
+#jumbotron-message p {
+  font-size: 1.5vw;
+}
+
+.section-hero-logo img {
+  height: auto;
+  width: 30%;
+  margin-top: 2.0vw;
+}
+
+.jumbotron span {
+  font-weight: bold;
+}
+
+.jumbotron .container {
+  height: 350px;
+}
+
+.inline-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.stylists {
+ background-color: black;
+}
