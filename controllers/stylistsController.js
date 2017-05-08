@@ -24,13 +24,13 @@ function create(req, res) {
 
   db.Stylist.create(req.body, function(err, stylist) {
     if (err) { console.log('error', err); }
-    console.log stylist);
-    res.json stylist);
+    console.log (stylist);
+    res.json (stylist);
   });
 }
 
 function show(req, res) {
-  db.Stylist.findById(req.params stylistId, function(err, foundStylist) {
+  db.Stylist.findById(req.params.stylistId, function(err, foundStylist) {
     if(err) { console.log('stylistsController.show error', err); }
     console.log('stylistsController.show responding with', foundStylist);
     res.json(foundStylist);
@@ -38,14 +38,14 @@ function show(req, res) {
 }
 
 function destroy(req, res) {
-  db.Stylist.findOneAndRemove({ _id: req.params stylistId }, function(err, foundStylist){
+  db.Stylist.findOneAndRemove({ _id: req.params.stylistId }, function(err, foundStylist){
     res.json(foundStylist);
   });
 }
 
 function update(req, res) {
   console.log('updating with data', req.body);
-  db.Stylist.findById(req.params stylistId, function(err, foundStylist) {
+  db.Stylist.findById(req.params.stylistId, function(err, foundStylist) {
     if(err) { console.log('stylistsController.update error', err); }
     foundStylist.artistName = req.body.artistName;
     foundStylist.name = req.body.name;
