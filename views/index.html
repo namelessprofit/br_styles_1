@@ -35,24 +35,21 @@
       <p>Schedule your appointment today.</p>
     </div>
   </div>
-
-
   </div>
 
   <div class="stylists">
-    <hr>
-    <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
-      <input type="text" class="form-control" placeholder="New stylist name" ng-model="stylistsIndexCtrl.newStylist.name"><br>
-      <input type="text" class="form-control" ng-model="searchText" placeholder="Search Stylists">
-      <div ng-repeat="stylist in stylistsIndexCtrl.stylist | orderBy: 'name' | filter: searchText" class="row">
-        <br>
-
+  <br>
         <!-- Mid Secton
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div class="container">
           <div class="col-xs-12">
             <h1 align="center">Choose a stylist.</h1>
 
+            <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
+              <!-- <input type="text" class="form-control" placeholder="New stylist name" ng-model="stylistsIndexCtrl.newStylist.name"><br> -->
+              <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">
+              <div ng-repeat="stylist in stylistsIndexCtrl.stylist | orderBy: 'name' | filter: searchText" class="row">
+                <br>
 
             <div class="row">
               <div align="center" class="col-xs-4">
@@ -141,25 +138,7 @@
       <br>
 
 
-        <footer>
-          <div class="footer-div">
-            <div class="row">
-              <div class="col-xs-3">
-                <p align="center">About us</p>
-              </div>
-              <div class="col-xs-3">
-                <p align="center">Contact</p>
-              </div>
-              <div class="col-xs-3">
-                <p align="center">Support</p>
-              </div>
-              <div class="col-xs-3">
-                <p align="center">Sign in</p>
-              </div>
-            </div>
-          </div>
 
-        </footer>
 
         <!-- <div class="col-md-10 col-md-offset-1">
           <div class="panel panel-default">
@@ -186,6 +165,27 @@
       </div>
     </div>
   </div>
+
+
+  <footer>
+    <div class="footer-div">
+      <div class="row">
+        <div class="col-xs-3">
+          <p align="center">About us</p>
+        </div>
+        <div class="col-xs-3">
+          <p align="center">Contact</p>
+        </div>
+        <div class="col-xs-3">
+          <p align="center">Support</p>
+        </div>
+        <div class="col-xs-3">
+          <p align="center">Sign in</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 </body>
 
