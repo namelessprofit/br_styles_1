@@ -14,14 +14,17 @@ angular
   vm.stylists = [
     {
       name: 'Archy Posada',
+      bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       location: 'Grant Ave, San Francisco'
     },
     {
       name: 'Tom Ford',
+      bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       location: 'Grant Ave, San Francisco'
     },
     {
       name: 'Hugo Boss',
+      bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       location: 'Grant Ave, San Francisco'
     }
   ];
