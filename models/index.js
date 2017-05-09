@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/brstyles_test");
+    mongoose.connect( process.env.MONGODB_URI || "https://git.heroku.com/sleepy-dawn-50943.git" );
 
 var Stylist = require('./stylist');
 
