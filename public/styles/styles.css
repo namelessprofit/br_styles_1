@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .jumbotron {
@@ -49,6 +49,10 @@ body {
 
 .stylists {
  background-color: #f3f3f3;
+ color: white;
+}
+
+.stylists h1 {
  color: black;
 }
 

@@ -1,32 +1,24 @@
 angular
   .module('br-styles', [])
-  .controller('StylistsIndexController', StylistsIndexController);
+  .config(config)
 
-  function StylistsIndexController () {
-    var vm = this;
-    vm.newStylist = {};
+config.$inject = ['$routeProvider', '$locationProvider'];
 
-    vm.newStylist = {
-        name: 'Kaya Fortune',
-        location: 'Grant Ave, San Francisco'
-    };
+function config($routeProvider, $locationProvider) {
+    $routeProvider
+        .when('/', {
+            templateUrl: '/templates/stylists',
+            controllerAs: 'stylistsIndexCtrl',
+            controller: 'StylistsIndexController'
+        })
+        .when('/stylists/:id', {
+            templateUrl: '/templates/stylists-show',
+            controllerAs: 'stylistsShowCtrl',
+            controller: 'StylistsShowController'
+        });
 
-  vm.stylists = [
-    {
-      name: 'Archy Posada',
-      bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      location: 'Grant Ave, San Francisco'
-    },
-    {
-      name: 'Tom Ford',
-      bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      location: 'Grant Ave, San Francisco'
-    },
-    {
-      name: 'Hugo Boss',
-      bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      location: 'Grant Ave, San Francisco'
-    }
-  ];
-vm.hello = "jean";
-  }
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
+}

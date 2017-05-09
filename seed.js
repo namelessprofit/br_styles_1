@@ -1,13 +1,10 @@
-// This file allows us to seed our application with data
-// simply run: `node seed.js` from the root of this project folder.
-
 var db = require("./models");
 
 stylistList = [];
 stylistList.push({
-  name: 'Jlo',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-  location: 'Grant Ave, San Francisco',
+  name: 'Archy Posada',
+  bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  location: 'Grant Ave, San Francisco'
 });
 stylistList.push({
   name: 'Jlo',
@@ -15,14 +12,14 @@ stylistList.push({
   location: 'Grant Ave, San Francisco',
 });
 stylistList.push({
-  name: 'Jlo',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-  location: 'Grant Ave, San Francisco',
+  name: 'Tom Ford',
+  bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  location: 'Melrose Ave, Los Angeles'
 });
 stylistList.push({
-  name: 'Jlo',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-  location: 'Grant Ave, San Francisco',
+  name: 'Hugo Boss',
+  bio:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  location: 'Grant Ave, San Francisco'
 });
 
 var sampleAppointments = [];
