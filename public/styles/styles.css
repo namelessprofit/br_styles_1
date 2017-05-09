@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .jumbotron {
@@ -26,6 +26,7 @@ body {
   height: auto;
   width: 30%;
   margin-top: 2.0vw;
+  margin-bottom: 2.0vw;
 }
 
 .jumbotron span {
@@ -48,6 +49,10 @@ body {
 
 .stylists {
  background-color: #f3f3f3;
+ color: white;
+}
+
+.stylists h1 {
  color: black;
 }
 
