@@ -1,4 +1,4 @@
-# BR-Styles
+# brstyles
 
 An app that allows you schedule a styling appointment with a BR stylist in your area.
 

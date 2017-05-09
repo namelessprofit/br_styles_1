@@ -1,5 +1,5 @@
 {
-  "name": "br-styles",
+  "name": "brstyles",
   "version": "1.0.0",
   "description": "A personal stylist scheduling app for Banana Republic",
   "main": "server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namelessprofit/br-styles.git"
+    "url": "git+https://github.com/namelessprofit/brstyles.git"
   },
   "author": "Archy Posada",
   "license": "ISC",
   "bugs": {
-    "url": "git+https://github.com/namelessprofit/br-styles.git"
+    "url": "git+https://github.com/namelessprofit/brstyles.git"
   },
-  "homepage": "https://github.com/namelessprofit/br-styles#readme",
+  "homepage": "https://github.com/namelessprofit/brstyles#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "bower": "^1.7.9",
