@@ -1,15 +1,15 @@
 angular
-  .module('br-styles', [])
+  .module('brstyles')
   .controller('StylistsIndexController', StylistsIndexController);
 
-StylistsIndexController.$inject = ['$http'];
-function StylistsIndexController($http) {
-    //TODO: Move these variable declarations to the top of your code block
+StylistsIndexController.$inject = ['$http', '$scope'];
+function StylistsIndexController($http, $scope) {
+
     var vm = this;
-    vmStylist = {};
+    vm.stylist = {};
     $http({
         method: 'GET',
-        url: 'api/stylists'
+        url: '/api/stylists'
     }).then(successCallback, errorCallback);
 
     function successCallback(response) {
@@ -28,8 +28,6 @@ function StylistsIndexController($http) {
             url: 'api/stylists',
             data: vm.newStylist
         }).then(
-            // TODO: decide your coding convention on calling or defining functions in the then method
-            // NOTE: you might want to name your functions differently
             function successCallback(response) {
                 console.log("congrats!");
                 vm.stylists.push(response.data);

@@ -1,6 +1,6 @@
-<div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
+<div class="container" id="stylists">
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-10">
 
           <form class="form-horizontal" ng-submit="stylistsIndexCtrl.createStylist()">
             <fieldset>
@@ -12,7 +12,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label">Stylist Name</label>
                 <div class="col-md-4">
-                <input id="name" ng-model="stylistsIndexCtrl.newStylist.name" type="text" class="form-control input-md" required="">
+                <input id="name" ng-model="stylistsIndexCtrl.newStylist.name" type="text" class="form-control input-md" required="" autofocus="on">
                 </div>
               </div>
 
@@ -44,13 +44,7 @@
         </div>
       </div>
 
-      <p>{{stylistsIndexCtrl.newStylist}}</p>
-
-
-
-
-
-
+      <!-- <p>{{stylistsIndexCtrl.newStylist}}</p> -->
 
 <!-- Mid Secton
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->

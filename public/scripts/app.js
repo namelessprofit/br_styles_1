@@ -1,5 +1,5 @@
 angular
-  .module('br-styles', [])
+  .module('brstyles', ['ngRoute'])
   .config(config)
 
 config.$inject = ['$routeProvider', '$locationProvider'];
@@ -7,7 +7,7 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/templates/stylists',
+            templateUrl: 'templates/stylists',
             controllerAs: 'stylistsIndexCtrl',
             controller: 'StylistsIndexController'
         })
@@ -15,8 +15,7 @@ function config($routeProvider, $locationProvider) {
             templateUrl: '/templates/stylists-show',
             controllerAs: 'stylistsShowCtrl',
             controller: 'StylistsShowController'
-        });
-
+        })
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false

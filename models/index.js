@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/br-styles_test");
+mongoose.connect("mongodb://localhost/brstyles_test");
 
 var Stylist = require('./stylist');
 
