@@ -48,7 +48,6 @@
     <div class="col-xs-12">
       <h1 align="center">Locate a stylist.</h1>
       <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
-        <!-- <input type="text" class="form-control" placeholder="New stylist name" ng-model="stylistsIndexCtrl.newStylist.name"><br> -->
         <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">
         <div ng-repeat="stylist in stylistsIndexCtrl.stylists | orderBy: 'name' | filter: searchText" class="row">
           <br>
