@@ -50,7 +50,7 @@ body {
 
 .stylists {
  background-color: #f3f3f3;
- color: white;
+ color: black;
 }
 
 .stylists h1 {
@@ -59,4 +59,74 @@ body {
 
 footer {
  background-color: black;
+ color: white;
+ margin-top: 15vw;
 }
+
+.thumbnail {
+background-color: #f3f3f3;
+border-width: 0px;
+}
+
+.crud-stylist-btns {
+  margin-top: 1.5vw;
+}
+
+#create-stylists-form {
+ background-color: 
+}
+
+.form-group {
+ text-align: center;
+ border-width: thin;
+}
+
+/*.container {
+	position:relative;
+	overflow:hidden;
+}
+
+.css-carousel {
+  width:500%;
+  -webkit-animation: css-carousel 20s linear infinite;
+	-moz-animation: css-carousel 20s linear infinite;
+	-ms-animation: css-carousel 20s linear infinite;
+	animation: css-carousel 20s linear infinite;
+}
+
+.css-carousel .css-img{
+  display:inline-block;
+}
+.css-carousel img:not(:first-child){
+  float:left;
+}
+
+@-webkit-keyframes css-carousel {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+
+}
+@-moz-keyframes css-carousel {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+}
+@-ms-keyframes css-carousel {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+}
+@keyframes css-carousel {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+}*/

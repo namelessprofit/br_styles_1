@@ -1,7 +1,52 @@
+<div class="container" id="create-stylists-form">
+      <div class="row">
+        <div class="col-md-12">
+
+          <form class="form-horizontal" ng-submit="stylistsIndexCtrl.createStylist()">
+            <fieldset>
+
+              <!-- Form Name -->
+              <legend align="center">Add New Stylist</legend>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <div class="col-md-12">
+                <input placeholder="Name" ng-model="stylistsIndexCtrl.newStylist.name" type="text" class="form-control input-md" required="" autofocus="on">
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <div class="col-md-12">
+                <input placeholder="Bio"ng-model="stylistsIndexCtrl.newStylist.bio" type="text" class="form-control input-md">
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <div class="col-md-12">
+                <input placeholder="Location" ng-model="stylistsIndexCtrl.newStylist.location" type="text" class="form-control input-md">
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="form-group">
+                <div class="col-md-12">
+                  <button class="btn btn-primary">Create Stylist</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+</div>
+
+<!-- Mid Secton
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="stylists">
   <div class="container">
     <div class="col-xs-12">
-      <h1 align="center">Choose a stylist.</h1>
+      <h1 align="center">Locate a stylist.</h1>
       <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
         <!-- <input type="text" class="form-control" placeholder="New stylist name" ng-model="stylistsIndexCtrl.newStylist.name"><br> -->
         <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">

@@ -16,6 +16,11 @@ function config($routeProvider, $locationProvider) {
             controllerAs: 'stylistsShowCtrl',
             controller: 'StylistsShowController'
         })
+        .when('/admin', {
+            templateUrl: '/templates/admin',
+            controllerAs: 'stylistsIndexCtrl',
+            controller: 'StylistsIndexController'
+        })
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
