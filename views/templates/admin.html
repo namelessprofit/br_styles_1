@@ -46,7 +46,7 @@
 <div class="stylists">
   <div class="container">
     <div class="col-xs-12">
-      <h1 align="center">Locate a stylist.</h1>
+      <h1 align="center">Edit a stylist.</h1>
       <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
         <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">
         <div ng-repeat="s in stylistsIndexCtrl.stylists | orderBy: 'name' | filter: searchText" class="row">
@@ -70,7 +70,7 @@
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <a ng-hide="editing">{{s.name}}</a>
+                      <span ng-hide="editing">{{s.name}}</span>
                       <input ng-show="editing" ng-model="s.name" type="text" class="form-control input-md">
                     </li>
 
