@@ -7,9 +7,9 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'templates/stylists',
-            controllerAs: 'stylistsIndexCtrl',
-            controller: 'StylistsIndexController'
+            templateUrl: 'templates/appointment',
+            controllerAs: 'stylistsApptIndexCtrl',
+            controller: 'StylistsAppointmentsIndexController'
         })
         .when('/stylists/:id', {
             templateUrl: '/templates/stylists-show',

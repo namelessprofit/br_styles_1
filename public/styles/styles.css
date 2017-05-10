@@ -1,6 +1,15 @@
 body {
   background-color: white;
   color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.stylists {
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .jumbotron {
@@ -16,7 +25,6 @@ body {
 #jumbotron-message h1 {
   font-size: 4.5vw;
   margin-top: 4.0vw;
-
 }
 
 #jumbotron-message p {
@@ -49,23 +57,23 @@ body {
 }
 
 .stylists {
- background-color: #f3f3f3;
- color: black;
+  background-color: #f3f3f3;
+  color: black;
 }
 
 .stylists h1 {
- color: black;
+  color: black;
 }
 
 footer {
- background-color: black;
- color: white;
- margin-top: 15vw;
+  background-color: black;
+  color: white;
+  margin-top: 15vw;
 }
 
 .thumbnail {
-background-color: #f3f3f3;
-border-width: 0px;
+  background-color: #f3f3f3;
+  border-width: 0px;
 }
 
 .crud-stylist-btns {
@@ -73,60 +81,10 @@ border-width: 0px;
 }
 
 #create-stylists-form {
- background-color: 
+  background-color:
 }
 
 .form-group {
- text-align: center;
- border-width: thin;
+  text-align: center;
+  border-width: thin;
 }
-
-/*.container {
-	position:relative;
-	overflow:hidden;
-}
-
-.css-carousel {
-  width:500%;
-  -webkit-animation: css-carousel 20s linear infinite;
-	-moz-animation: css-carousel 20s linear infinite;
-	-ms-animation: css-carousel 20s linear infinite;
-	animation: css-carousel 20s linear infinite;
-}
-
-.css-carousel .css-img{
-  display:inline-block;
-}
-.css-carousel img:not(:first-child){
-  float:left;
-}
-
-@-webkit-keyframes css-carousel {
-  0%, 23% {margin-left:0}
-  25%, 48% { margin-left:-100%; }
-  50%, 73% { margin-left:-200%; }
-  75%, 98% { margin-left:-300%;}
-  100% { margin-left:0;}
-
-}
-@-moz-keyframes css-carousel {
-  0%, 23% {margin-left:0}
-  25%, 48% { margin-left:-100%; }
-  50%, 73% { margin-left:-200%; }
-  75%, 98% { margin-left:-300%;}
-  100% { margin-left:0;}
-}
-@-ms-keyframes css-carousel {
-  0%, 23% {margin-left:0}
-  25%, 48% { margin-left:-100%; }
-  50%, 73% { margin-left:-200%; }
-  75%, 98% { margin-left:-300%;}
-  100% { margin-left:0;}
-}
-@keyframes css-carousel {
-  0%, 23% {margin-left:0}
-  25%, 48% { margin-left:-100%; }
-  50%, 73% { margin-left:-200%; }
-  75%, 98% { margin-left:-300%;}
-  100% { margin-left:0;}
-}*/

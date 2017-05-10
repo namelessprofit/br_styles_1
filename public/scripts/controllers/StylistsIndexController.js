@@ -49,7 +49,7 @@ function StylistsIndexController($http, $scope) {
         });
     }
     vm.editStylist = function(stylist) {
-        console.log("Clicked edit stylist");
+        console.log("Clicked edit stylist", stylist);
         $http({
             method: 'PUT',
             url: '/api/stylists/' + stylist._id,

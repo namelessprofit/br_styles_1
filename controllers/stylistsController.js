@@ -47,9 +47,9 @@ function update(req, res) {
   console.log('updating with data', req.body);
   db.Stylist.findById(req.params.stylistId, function(err, foundStylist) {
     if(err) { console.log('stylistsController.update error', err); }
-    foundStylist.artistName = req.body.artistName;
     foundStylist.name = req.body.name;
-    foundStylist.releaseDate = req.body.releaseDate;
+    foundStylist.bio = req.body.bio;
+    foundStylist.location = req.body.location;
     foundStylist.save(function(err, savedStylist) {
       if(err) { console.log('saving altered stylist failed'); }
       res.json(savedStylist);
