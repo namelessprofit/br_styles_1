@@ -20,30 +20,28 @@
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <a ng-hide="editing">{{stylist.name}}</a>
-                      <input ng-show="editing" ng-model="stylist.name" type="text" class="form-control input-md">
+                      <a>{{stylist.name}}</a>
                     </li>
 
                     <li class="">
                       <h4 class='inline-header'></h4>
                       <span ng-hide="editing">{{stylist.bio}}</span>
-                      <input ng-show="editing" ng-model="stylist.bio" type="text" class="form-control input-md">
                     </li>
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <span ng-hide="editing">{{stylist.location}}</span>
-                      <input ng-show="editing" ng-model="stylist.location" type="text" class="form-control input-md">
+                      <span>{{stylist.location}}</span>
                     </li>
                     <li>
                       <div class="crud-stylist-btns" align="center">
                         <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Schedule an appointment</button>
-                        <button class='btn btn-success' ng-show="editing" ng-click="stylistsIndexCtrl.editStylist(stylist); editing = false">Save Changes</button>
+                        <button class='btn btn-success' ng-show="editing" ng-click="stylistsApptIndexCtrl.editAppointment(appointment); editing = false">Save Changes</button>
                       </div>
                     </li>
                     </ul>
                   </div>
                 </div>
+
                 <div>
                 </div>
               </div>
