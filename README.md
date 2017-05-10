@@ -22,11 +22,13 @@
 - CSS
 
 ##  Upcoming features
+
 -
 -
 -
 -
 -
+
 
 ## Model ERD
 
@@ -44,8 +46,13 @@ We originally moved forward with the following wireframes in an orange & green c
 <img src="" width="70%">
 
 
+
 ## Contributors
 - [Archy Posada](https://www.linkedin.com/in/archyposada/)
 
 ## Links
 - [Site on Heroku](https://sleepy-dawn-50943.herokuapp.com/)
+
+
+
+
