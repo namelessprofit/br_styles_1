@@ -50,8 +50,10 @@ function update(req, res) {
     var correctAppointment = foundStylist.appointments.id(req.params.appointmentId);
     if (correctAppointment) {
       console.log(req.body);
-      correctAppointment.trackNumber = req.body.trackNumber;
       correctAppointment.name = req.body.name;
+      correctAppointment.email = req.body.email;
+      correctAppointment.phoneNumber = req.body.phoneNumber;
+      correctAppointment.date = req.body.date;
       foundStylist.save(function(err, saved) {
         console.log('UPDATED', correctAppointment, 'IN ', saved.appointments);
         res.json(correctAppointment);

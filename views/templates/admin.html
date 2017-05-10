@@ -49,7 +49,7 @@
       <h1 align="center">Locate a stylist.</h1>
       <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
         <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">
-        <div ng-repeat="stylist in stylistsIndexCtrl.stylists | orderBy: 'name' | filter: searchText" class="row">
+        <div ng-repeat="s in stylistsIndexCtrl.stylists | orderBy: 'name' | filter: searchText" class="row">
           <br>
           <div class="col-md-10 col-md-offset-1">
             <div class="">
@@ -60,9 +60,9 @@
                     <img src="/images/placeholder.jpeg" alt="">
 
                     <div class="crud-stylist-btns" align="center">
-                      <button class='btn btn-danger' ng-click="stylistsIndexCtrl.deleteStylist(stylist)">Delete Stylist</button>
+                      <button class='btn btn-danger' ng-click="stylistsIndexCtrl.deleteStylist(s)">Delete Stylist</button>
                       <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Edit Stylist</button>
-                      <button class='btn btn-success' ng-show="editing" ng-click="stylistsIndexCtrl.editStylist(stylist); editing = false">Save Changes</button>
+                      <button class='btn btn-success' ng-show="editing" ng-click="stylistsIndexCtrl.editStylist(s); editing = false">Save Changes</button>
                     </div>
                   </div>
 
@@ -70,20 +70,20 @@
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <a ng-hide="editing">{{stylist.name}}</a>
-                      <input ng-show="editing" ng-model="stylist.name" type="text" class="form-control input-md">
+                      <a ng-hide="editing">{{s.name}}</a>
+                      <input ng-show="editing" ng-model="s.name" type="text" class="form-control input-md">
                     </li>
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <span ng-hide="editing">{{stylist.bio}}</span>
-                      <input ng-show="editing" ng-model="stylist.bio" type="text" class="form-control input-md">
+                      <span ng-hide="editing">{{s.bio}}</span>
+                      <input ng-show="editing" ng-model="s.bio" type="text" class="form-control input-md">
                     </li>
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <span ng-hide="editing">{{stylist.location}}</span>
-                      <input ng-show="editing" ng-model="stylist.location" type="text" class="form-control input-md">
+                      <span ng-hide="editing">{{s.location}}</span>
+                      <input ng-show="editing" ng-model="s.location" type="text" class="form-control input-md">
                     </li>
                     </ul>
                   </div>
