@@ -2,8 +2,7 @@
   <div class="container">
     <div class="col-xs-12">
       <h1 align="center">Choose a stylist.</h1>
-      <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
-        <!-- <input type="text" class="form-control" placeholder="New stylist name" ng-model="stylistsIndexCtrl.newStylist.name"><br> -->
+      <div class="container" ng-controller="AppointmentsIndexController as stylistsIndexCtrl">
         <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">
         <div ng-repeat="stylist in stylistsIndexCtrl.stylists | orderBy: 'name' | filter: searchText" class="row">
           <br>
@@ -36,12 +35,12 @@
                       <span ng-hide="editing">{{stylist.location}}</span>
                       <input ng-show="editing" ng-model="stylist.location" type="text" class="form-control input-md">
                     </li>
-<li>
-                    <div class="crud-stylist-btns" align="center">
-                      <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Schedule an appointment</button>
-                      <button class='btn btn-success' ng-show="editing" ng-click="stylistsIndexCtrl.editStylist(stylist); editing = false">Save Changes</button>
-                    </div>
-</li>
+                    <li>
+                      <div class="crud-stylist-btns" align="center">
+                        <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Schedule an appointment</button>
+                        <button class='btn btn-success' ng-show="editing" ng-click="stylistsIndexCtrl.editStylist(stylist); editing = false">Save Changes</button>
+                      </div>
+                    </li>
                     </ul>
                   </div>
                 </div>
