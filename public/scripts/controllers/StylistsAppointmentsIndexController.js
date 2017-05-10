@@ -14,7 +14,7 @@ function StylistsAppointmentsIndexController($http, $scope) {
   }).then(successCallback, errorCallback);
 
   function successCallback(response) {
-    console.log(response.data);
+    // console.log(response.data);
     vm.stylists = response.data;
   }
 
