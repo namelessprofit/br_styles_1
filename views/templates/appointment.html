@@ -20,12 +20,12 @@
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <a>{{stylist.name}}</a>
+                      <span>{{stylist.name}}</span>
                     </li>
 
                     <li class="">
                       <h4 class='inline-header'></h4>
-                      <span ng-hide="editing">{{stylist.bio}}</span>
+                      <span>{{stylist.bio}}</span>
                     </li>
 
                     <li class="">
@@ -34,8 +34,8 @@
                     </li>
                     <li>
                       <div class="crud-stylist-btns" align="center">
-                        <button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Schedule an appointment</button>
-                        <button class='btn btn-success' ng-show="editing" ng-click="stylistsApptIndexCtrl.editAppointment(appointment); editing = false">Save Changes</button>
+                        <button class='btn btn-info' ng-hide="creating" ng-click="creating = true">Schedule an appointment</button>
+                        <button class='btn btn-success' ng-show="creating" ng-click="stylistsApptIndexCtrl.editAppointment(appointment); editing = false">Create appointment</button>
                       </div>
                     </li>
                     </ul>

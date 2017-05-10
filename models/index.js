@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 
-mongoose.connect( process.env.MONGODB_URI || "https://sleepy-dawn-50943.herokuapp.com/" );
-
+mongoose.connect("mongodb://localhost/brtsyles_test");
 
 
 var Stylist = require('./stylist');
