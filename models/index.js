@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/brtsyles_test");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/brtsyles_test");
 
 
 var Stylist = require('./stylist');
