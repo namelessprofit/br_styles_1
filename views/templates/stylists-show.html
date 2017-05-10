@@ -44,16 +44,10 @@
                     </div>
                 </div>
             </div>
+
+            <button class='btn btn-info' ng-hide="creating" ng-click="creating = true">Schedule an appointment</button>
+            <button class='btn btn-success' ng-show="creating" ng-click="stylistsApptIndexCtrl.editAppointment(appointment); editing = false">Create appointment</button>
+
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-<button class='btn btn-info' ng-hide="creating" ng-click="creating = true">Schedule an appointment</button>
-<button class='btn btn-success' ng-show="creating" ng-click="stylistsApptIndexCtrl.editAppointment(appointment); editing = false">Create appointment</button>
