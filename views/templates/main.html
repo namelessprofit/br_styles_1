@@ -34,8 +34,7 @@
                     </li>
                     <li>
                       <div class="crud-stylist-btns" align="center">
-                        <button class='btn btn-info' ng-hide="creating" ng-click="creating = true">Schedule an appointment</button>
-                        <button class='btn btn-success' ng-show="creating" ng-click="stylistsApptIndexCtrl.editAppointment(appointment); editing = false">Create appointment</button>
+                      <a ng-href="stylists/{{stylist._id}}" ng-hide="editing" class='btn btn-info'>Schedule an appointment</a>
                       </div>
                     </li>
                     </ul>
