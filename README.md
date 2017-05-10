@@ -2,7 +2,7 @@
 
 ## A Mean Stack app that allows you schedule a styling appointment with a BR stylist in your area.
 
-TradeUP is based on the story of a Canadian blogger named [Kyle MacDonald](https://en.wikipedia.org/wiki/One_red_paperclip) who bartered his way from a single red paperclip to a house in a series of fourteen online trades over the course of a year. This story inspired our group to build a Craigslist-style trading app that encourages users to continue trading up to see the limitless possibilities that they can get.
+(Brief descrption of the problem i am solving for BR.)
 
 <img src="" width="100%">
 
