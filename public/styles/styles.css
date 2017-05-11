@@ -92,3 +92,11 @@ footer {
 #styilsts-show {
  font-size: 2vw;
 }
+
+footer a, a:hover {
+ color: white;
+}
+
+#footer-div {
+background-color: black;
+}
