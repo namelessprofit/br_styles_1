@@ -4,9 +4,6 @@
 
 Banana Republic has recently launched a new service for their customers. They are oferring peronsal styling appoitnments with a fashion expert to help but have no way of scheduling appointments. Currently, customers have to call the store and schedule an appointment over the phone. This has bcome an issue as there is no one dedicated solely to picking up the phone. This is the cashiers secondary job, so many calls go unanswered and customer have a hard time scheduling appointments. 
 
-<img src="" width="100%">
-
-
 ## User Story
 
 1. A user can find a stylist by entering their zip code or hsaring their location.
@@ -32,18 +29,18 @@ Banana Republic has recently launched a new service for their customers. They ar
 
 ## Model ERD
 
-<img src="public/images/Screen Shot 2017-05-03 at 3.30.23 PM.png" width="80%">
+<img src="http://i.imgur.com/wk1Zt5r.png" width="80%">
 
 
 ## The Design Evolution
 
 We originally moved forward with the following wireframes in an orange & green color scheme to match the custom logo:
 #### Home page
-<img src="" width="70%">
-#### Admin page
-<img src="" width="70%">
-#### Appointments page
-<img src="" width="70%">
+<img src="http://i.imgur.com/Hw3vzqh.png" width="70%">
+#### Appt page
+<img src="http://i.imgur.com/KS23zEB.png" width="70%">
+#### Reviews page
+<img src="http://i.imgur.com/VIukvsP.png" width="70%">
 
 
 
@@ -51,7 +48,7 @@ We originally moved forward with the following wireframes in an orange & green c
 - [Archy Posada](https://www.linkedin.com/in/archyposada/)
 
 ## Links
-- [Site on Heroku](https://sleepy-dawn-50943.herokuapp.com/)
+- [Site on Heroku](https://br-styles.herokuapp.com/)
 
 
 
