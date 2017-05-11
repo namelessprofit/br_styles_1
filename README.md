@@ -1,4 +1,4 @@
-# <img src="public/images/Screen Shot 2017-05-10 at 11.31.35 PM.png" width="100%"> BR Styles
+# <img src="http://i.imgur.com/e1kUR5P.png" width="100%"> BR Styles
 
 ## A Mean Stack app designed for Banana Republic. It allows customers to schedule a personal styling appointment with a Banana Repblic fashion expert in your area.  
 
