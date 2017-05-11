@@ -1,53 +1,111 @@
 <div class="container-fluid" ng-init="stylistsShowCtrl.Data()" id="styilsts-show">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="col-sm-3">
-                <img src="/images/placeholder.jpeg" class="img-responsive">
-            </div>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-12 stylists-data">
-                        <p>{{stylistsShowCtrl.stylist.name}}</p>
-                    </div>
-                    <div class="col-sm-12 stylists-data">
-                        <p>{{stylistsShowCtrl.stylist.bio}}</p>
-                    </div>
-                    <div class="col-sm-12 stylists-data">
-                        <p>{{stylistsShowCtrl.stylist.location}}</p>
-                    </div>
-                    <div class="col-sm-12 stylists-data">
-
-                        <p>Appointments:</p>
-
-                        <div class="col-sm-12 stylists-data" ng-init="s.newName = s.name" ng-repeat="s in stylistsShowCtrl.stylist.appointments">
-
-                            <button type="button" name="button" class="btn-info" ng-hide="s.active" ng-click="s.active = !s.active">
-                              <span class="glyphicon glyphicon-pencil"></span>
-                            </button>
-
-                            <button type="button" name="button" class="btn-info" ng-show="s.active" ng-click="s.active = !s.active; stylistsShowCtrl.editAppointment(s) ">
-                              <span class="glyphicon glyphicon-save"></span>
-                            </button>
-
-                            <button type="button" name="button" class="btn-danger" ng-hide="s.active" ng-click="stylistsShowCtrl.deleteAppointment(s); stylistsShowCtrl.stylist.appointments.splice($index,1)">
-                              <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-
-                            <button type="button" name="button" class="btn-warning" ng-show="s.active" ng-click="s.newName = s.name;s.active = !s.active;">
-                              <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-
-                            <span ng-hide='s.active'>{{s.newName}}</span>
-                            <input type="text" name="{{s.name}}" ng-model="s.newName" ng-show='s.active'>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-sm-3">
+        <img src="/images/placeholder.jpeg" class="img-responsive">
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-12 stylists-data">
+            <p>{{stylistsShowCtrl.tempData.name}}</p>
+          </div>
+          <div class="col-sm-12 stylists-data">
+            <p>{{stylistsShowCtrl.tempData.bio}}</p>
+          </div>
+          <div class="col-sm-12 stylists-data">
+            <p>{{stylistsShowCtrl.tempData.location}}</p>
+          </div>
+          <div class="col-xs-12" id="schedule-buttons">
             <button class='btn btn-info' ng-hide="creating" ng-click="creating = true">Schedule an appointment</button>
             <button class='btn btn-success' ng-show="creating" ng-click="stylistsApptIndexCtrl.createAppointment(appointment); creating = false">Create appointment</button>
-
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <div class="container">
+          <form class="well form-horizontal" id="contact_form" ng-show="creating">
+            <fieldset>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input placeholder="Name" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text input-->
+
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input placeholder="Phone Number" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-envelope"></i>
+                    </span>
+                    <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-envelope"></i>
+                    </span>
+                    <input name="email" placeholder="Date & Time" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4" align="center">
+                  <button onclick="makeSweetAlert()" type="button" class="btn btn-primary">Send
+                    <span class="glyphicon glyphicon-send"></span>
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12" id="back-to-stylists">
+  <a href="https://br-styles.herokuapp.com/" id="back-to-main">Back to Stylists</a>
 </div>

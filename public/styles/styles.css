@@ -101,12 +101,29 @@ footer a, a:hover {
 background-color: black;
 }
 
-#take-me-to-top a{
+#take-me-to-top a {
  font-size: 1.5vw;
  color: black;
  padding-top: 1vw;
 }
 
-#take-me-to-top a:hover{
+#take-me-to-top a:hover {
  color: #0ce3ac
+}
+
+.well {
+background-color: #f3f3f3;
+}
+
+#back-to-stylists {
+text-align: center;
+ font-size: 1.5vw;
+}
+
+#back-to-stylists a {
+ color: black;
+}
+
+#schedule-buttons {
+ margin-bottom: 2vw;
 }

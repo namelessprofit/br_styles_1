@@ -15,6 +15,7 @@ function StylistsShowController($http, $routeParams) {
         }).then(function successCallback(json) {
             console.log(json.data);
             vm.appointments = json.data.appointments;
+            vm.tempData = json.data;
             console.log(vm.appointments);
             vm.appointment = json.data;
         });
