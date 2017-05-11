@@ -1,11 +1,8 @@
-# <img src="" width="10%"> BR Styles
+# <img src="http://i.imgur.com/e1kUR5P.png" width="100%"> BR Styles
 
-## A Mean Stack app that allows you schedule a styling appointment with a BR stylist in your area.
+## A Mean Stack app designed for Banana Republic. It allows customers to schedule a personal styling appointment with a Banana Repblic fashion expert in your area.  
 
-(Brief descrption of the problem i am solving for BR.)
-
-<img src="" width="100%">
-
+Banana Republic has recently launched a new service for their customers. They are oferring peronsal styling appoitnments with a fashion expert to help but have no way of scheduling appointments. Currently, customers have to call the store and schedule an appointment over the phone. This has bcome an issue as there is no one dedicated solely to picking up the phone. This is the cashiers secondary job, so many calls go unanswered and customer have a hard time scheduling appointments. 
 
 ## User Story
 
@@ -23,27 +20,30 @@
 
 ##  Upcoming features
 
--
--
--
--
--
+- Sales force integration to create customer profile and tracks sales 
+- User and admin authentication 
+- User profile will store purchase history as well as sizing
+- Sales dashboard for managers
+
 
 
 ## Model ERD
 
-<img src="" width="80%">
+<img src="http://i.imgur.com/wk1Zt5r.png" width="50%">
 
 
 ## The Design Evolution
 
-We originally moved forward with the following wireframes in an orange & green color scheme to match the custom logo:
+As I scaled back on features due to time constraints the design evolved from the original mockups
+
 #### Home page
-<img src="" width="70%">
-#### Admin page
-<img src="" width="70%">
-#### Appointments page
-<img src="" width="70%">
+<img src="http://i.imgur.com/Hw3vzqh.png" width="70%">
+
+#### Appt page
+<img src="http://i.imgur.com/KS23zEB.png" width="70%">
+
+#### Reviews page
+<img src="http://i.imgur.com/VIukvsP.png" width="70%">
 
 
 
@@ -51,7 +51,7 @@ We originally moved forward with the following wireframes in an orange & green c
 - [Archy Posada](https://www.linkedin.com/in/archyposada/)
 
 ## Links
-- [Site on Heroku](https://sleepy-dawn-50943.herokuapp.com/)
+- [Site on Heroku](https://br-styles.herokuapp.com/)
 
 
 
