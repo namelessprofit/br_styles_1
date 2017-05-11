@@ -29,7 +29,7 @@ Banana Republic has recently launched a new service for their customers. They ar
 
 ## Model ERD
 
-<img src="http://i.imgur.com/wk1Zt5r.png" width="80%">
+<img src="http://i.imgur.com/wk1Zt5r.png" width="50%">
 
 
 ## The Design Evolution
