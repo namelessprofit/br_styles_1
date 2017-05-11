@@ -1,8 +1,8 @@
-# <img src="" width="10%"> BR Styles
+# <img src="public/images/Screen Shot 2017-05-10 at 11.31.35 PM.png" width="100%"> BR Styles
 
-## A Mean Stack app that allows you schedule a styling appointment with a BR stylist in your area.
+## A Mean Stack app designed for Banana Republic. It allows customers to schedule a personal styling appointment with a Banana Repblic fashion expert in your area.  
 
-(Brief descrption of the problem i am solving for BR.)
+Banana Republic has recently launched a new service for their customers. They are oferring peronsal styling appoitnments with a fashion expert to help but have no way of scheduling appointments. Currently, customers have to call the store and schedule an appointment over the phone. This has bcome an issue as there is no one dedicated solely to picking up the phone. This is the cashiers secondary job, so many calls go unanswered and customer have a hard time scheduling appointments. 
 
 <img src="" width="100%">
 
@@ -23,16 +23,16 @@
 
 ##  Upcoming features
 
--
--
--
--
--
+- Sales force integration to create customer profile and tracks sales 
+- User and admin authentication 
+- User profile will store purchase history as well as sizing
+- Sales dashboard for managers
+
 
 
 ## Model ERD
 
-<img src="" width="80%">
+<img src="public/images/Screen Shot 2017-05-03 at 3.30.23 PM.png" width="80%">
 
 
 ## The Design Evolution
