@@ -1,7 +1,7 @@
 <div class="stylists">
   <div class="container">
     <div class="col-xs-12">
-      <h1 align="center">Choose a stylist.</h1>
+      <h1 align="center" id="top">Choose a stylist.</h1>
       <div class="container" ng-controller="StylistsIndexController as stylistsIndexCtrl">
         <input type="text" class="form-control" ng-model="searchText" placeholder="Search stylists">
         <div ng-repeat="stylist in stylistsIndexCtrl.stylists | orderBy: 'name' | filter: searchText" class="row">
@@ -40,7 +40,6 @@
                     </ul>
                   </div>
                 </div>
-
                 <div>
                 </div>
               </div>
@@ -50,4 +49,7 @@
       </div>
     </div>
   </div>
+</div>
+<div class="col-xs-12" align="center" id="take-me-to-top">
+  <a href="#top" >Back to top</a>
 </div>

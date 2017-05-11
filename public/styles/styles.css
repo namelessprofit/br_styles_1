@@ -100,3 +100,13 @@ footer a, a:hover {
 #footer-div {
 background-color: black;
 }
+
+#take-me-to-top a{
+ font-size: 1.5vw;
+ color: black;
+ padding-top: 1vw;
+}
+
+#take-me-to-top a:hover{
+ color: #0ce3ac
+}
