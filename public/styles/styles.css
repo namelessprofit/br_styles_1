@@ -90,40 +90,45 @@ footer {
 }
 
 #styilsts-show {
- font-size: 2vw;
+  font-size: 2vw;
 }
 
 footer a, a:hover {
- color: white;
+  color: white;
 }
 
 #footer-div {
-background-color: black;
+  background-color: black;
 }
 
 #take-me-to-top a {
- font-size: 1.5vw;
- color: black;
- padding-top: 1vw;
+  font-size: 1.5vw;
+  color: black;
+  padding-top: 1vw;
 }
 
 #take-me-to-top a:hover {
- color: #0ce3ac
+  color: #0ce3ac
 }
 
 .well {
-background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 #back-to-stylists {
-text-align: center;
- font-size: 1.5vw;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 #back-to-stylists a {
- color: black;
+  color: black;
 }
 
 #schedule-buttons {
- margin-bottom: 2vw;
+  margin-bottom: 2vw;
+}
+
+#send-btn {
+  background-color: #3498db;
+  border-color: #3498db;
 }

@@ -29,7 +29,7 @@ function StylistsIndexController($http, $scope) {
             data: vm.newStylist
         }).then(
             function successCallback(response) {
-                console.log("congrats!");
+                console.log(response.data);
                 vm.stylists.push(response.data);
             },
             function errorCallback(response) {
