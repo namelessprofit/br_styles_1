@@ -34,11 +34,14 @@ Banana Republic has recently launched a new service for their customers. They ar
 
 ## The Design Evolution
 
-We originally moved forward with the following wireframes in an orange & green color scheme to match the custom logo:
+As I scaled back on features due to time constraints the design evolved from the original mockups
+
 #### Home page
 <img src="http://i.imgur.com/Hw3vzqh.png" width="70%">
+
 #### Appt page
 <img src="http://i.imgur.com/KS23zEB.png" width="70%">
+
 #### Reviews page
 <img src="http://i.imgur.com/VIukvsP.png" width="70%">
 
